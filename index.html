@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,7 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="js/main.js" defer></script>
 </head>
+
 <style>
     #lolli {
       display: flex;
@@ -17,31 +17,31 @@
       box-shadow: 0 4px 8px rgba(5, 4, 4, 0.1); 
     }
 </style>
+
 <body>
     <div class="container my-4">
         <h1 class="text-center">Interactive Employment Trends Visualization</h1>
         <h3 class="text-center">Female vs. Male Employment Rates in Various Countries</h3>
         
-    <div class="row mt-4 align-items-center">
-        <div class="col-auto"><strong>Country:</strong></div>
-        <div class="col-md-3">
-            <select id="countryDropdown" class="form-select">
-            </select>
+        <div class="row mt-4 align-items-center">
+            <div class="col-auto"><strong>Country:</strong></div>
+            <div class="col-md-3">
+                <select id="countryDropdown" class="form-select">
+                </select>
+            </div>
         </div>
-    </div>
 
-    <!-- Visualization Section -->
-    <div id="lolli" class="mt-4">
-    </div>
+        <!-- Visualization Section -->
+        <div id="lolli" class="mt-4">
+        </div>
 
-    <!-- Data Abstraction Section -->
-    <h4 class="mt-4">Data Abstraction</h4>
-    <ul>
-        <li>The <b>males_data.csv </b>file is static and  consists of CSV (Comma-Separated Values) data format.This file holds the tabular dataset, that consists of 32 rows and 180 columns, with a size of 34.79 KB.</li>
-        <li>The <b>Year</b> attribute type belongs to numerical(integer) type. The cardinality, which represents the unique values in the column, is 32. The range, which refers to the minimum and maximum years, is 1991 and 2022. Overall, it spans 32 years,which represents the cardinality is 32.</li>
-        <li>The <b>China</b> attribute  type belongs to numerical(float) type that represent static values and the cardinality is 32.</li>
-    </ul>
+        <!-- Data Abstraction Section -->
+        <h4 class="mt-4">Data Abstraction</h4>
+        <ul>
+            <li>The <b>males_data.csv</b> file is static and consists of CSV (Comma-Separated Values) format. The dataset contains 32 rows and 180 columns with a size of 34.79 KB.</li>
+            <li>The <b>Year</b> attribute is numerical (integer). It spans from 1991 to 2022 with a cardinality of 32.</li>
+            <li>The <b>China</b> attribute is numerical (float) representing static values with a cardinality of 32.</li>
+        </ul>
     </div>
 </body>
 </html>
-```
